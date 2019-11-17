@@ -3,7 +3,8 @@ class ReverseSentence:
     self.sentence = sentence
 
   def reverse(self):
-    return " ".join(self.sentence.split(" ")[::-1])
+    x= "".join([i for i in self.sentence[::-1]]) ## I changed that one because , when I write 'hello' , output is 'hello' but now output return to 'olleh'
+    return x
 
 
 if __name__ == "__main__":
